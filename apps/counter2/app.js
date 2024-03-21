@@ -86,4 +86,4 @@ updateScreen();
 Bangle.setUI("clock");
 setWatch(function() {
   Bangle.drawWidgets();
-}, BTN2, {repeat:false, edge:"falling"});
+}, BTN1, {repeat:false, edge:"falling"});

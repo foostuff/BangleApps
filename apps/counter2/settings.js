@@ -17,7 +17,7 @@
         "< Back": () => back(),
         'Default C1': {
             value: settings.max0,
-            min: -99, max: 99,
+            min: 0, max: 25,
             onchange: v => {
                 settings.max0 = v;
                 writeSettings();
@@ -25,7 +25,7 @@
         },
         'Default C2': {
             value: settings.max1,
-            min: -99, max: 99,
+            min: 0, max: 25,
             onchange: v => {
                 settings.max1 = v;
                 writeSettings();

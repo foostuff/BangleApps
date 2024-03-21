@@ -85,5 +85,6 @@ updateScreen();
 
 Bangle.setUI("clock");
 setWatch(function() {
-  Bangle.drawWidgets();
-}, BTN1, {repeat:false, edge:"falling"});
+    // Load the default launcher/watchface
+    load();
+}, BTN1, {repeat:true, edge:"falling"});

@@ -76,11 +76,14 @@ function resetcounter(which) {
   updateScreen();
   drag = undefined;
   ignoreonce = true;
+  Bangle.buzz();
 }
 
 Bangle.loadWidgets();
 Bangle.drawWidgets();
 updateScreen();
 
-// TODO: Enable saving counts to file
-// Add small watch
+Bangle.setUI("clock");
+setWatch(function() {
+  Bangle.drawWidgets();
+}, BTN2, {repeat:false, edge:"falling"});
